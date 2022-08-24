@@ -11,7 +11,6 @@ class ItemsController < ApplicationController
   end
 
   def show
-    byebug
     item = Item.find(params[:id])
     render json: item
   end
